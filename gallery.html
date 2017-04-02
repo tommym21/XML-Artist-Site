@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
+<head>
+    <title>Matt Hellard | Gallery</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/xc.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="../scripts/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="mainWrap">
+    <div class="header">
+        <div class="central">
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="Matt Hellard Music" src="images/banner.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="central main">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shows.html">NEWS & SHOWS</a></li>
+            </ul>
+        </nav>
+
+
+        <nav class="breadcrumb">
+            <ul>
+                <li>Gallery</li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <!--[if lt IE 9]>
+            <p class="ie-warning">
+                You're using an outdated version of Internet Explorer, please
+                upgrade to the latest version for a better browsing experience.
+            </p>
+            <![endif]-->
+
+            <section data-xml="data/images.xml" data-xslt="xslt/gallery.xslt" >
+                <p>Loading...</p>
+                <!-- placeholder for XML content -->
+            </section>
+
+            <div style="clear: both;height: 50px;"></div>
+        </section>
+
+        <footer>
+            Copyright &copy; 2017 - Tom Middleton
+        </footer>
+
+
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/m-xml.js"></script>
+<script type="text/javascript">
+    magicXML.parse();
+</script>
+</body>
+</html>

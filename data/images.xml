@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xc:image xmlns:xc="/xcommerce/1.0" xmlns:p="/xcommerce/1.0/images"
+             xmlns:c="/xcommerce/1.0/category">
+
+
+
+  <c:category c:name="Discography">
+
+
+  <p:image p:id="1">
+      <p:title>Back On The Road (Single)</p:title>
+      <p:src>images/backontheroad_bg.jpg</p:src>
+      <p:thumbnail>images/backontheroad_tn.jpg</p:thumbnail>
+    </p:image>
+
+  <p:image p:id="2">
+    <p:title>Flying Kites (Albun Cover)</p:title>
+    <p:src>images/flyingkites_bg.jpg</p:src>
+    <p:thumbnail>images/flyingkites_tn.jpg</p:thumbnail>
+  </p:image>
+
+  <p:image p:id="3">
+    <p:title>The Unknown - Live EP (Cover)</p:title>
+    <p:src>images/theunknown_bg.jpg</p:src>
+    <p:thumbnail>images/theunknown_tn.jpg</p:thumbnail>
+  </p:image>
+
+</c:category>
+
+
+  <c:category c:name="Misc">
+
+  <p:image p:id="4">
+    <p:title>Live Vibes</p:title>
+    <p:src>images/graphic_bg.jpg</p:src>
+    <p:thumbnail>images/graphic_tn.jpg</p:thumbnail>
+  </p:image>
+
+  <p:image p:id="5">
+    <p:title>Alliance with the forest</p:title>
+    <p:src>images/graphic2_bg.jpg</p:src>
+    <p:thumbnail>images/graphic2_tn.jpg</p:thumbnail>
+  </p:image>
+
+  </c:category>
+
+
+  <c:category c:name="Live">
+
+  <p:image p:id="6">
+    <p:title>Leicester Music Festival</p:title>
+    <p:src>images/live1_bg.jpg</p:src>
+    <p:thumbnail>images/live1_tn.jpg</p:thumbnail>
+  </p:image>
+
+  <p:image p:id="7">
+    <p:title>Live at De Montfort</p:title>
+    <p:src>images/live2_bg.jpg</p:src>
+    <p:thumbnail>images/live2_tn.jpg</p:thumbnail>
+  </p:image>
+
+  <p:image p:id="8">
+    <p:title>Leceister Music Festival</p:title>
+    <p:src>images/live3_bg.jpg</p:src>
+    <p:thumbnail>images/live3_tn.jpg</p:thumbnail>
+  </p:image>
+
+  <p:image p:id="8">
+    <p:title>Live at the Railway Winchester</p:title>
+    <p:src>images/nevergotfar_bg.jpg</p:src>
+    <p:thumbnail>images/nevergotfar_tn.jpg</p:thumbnail>
+  </p:image>
+
+  </c:category>
+
+
+
+
+
+
+
+
+
+
+</xc:image>

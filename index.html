@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
+<head>
+    <title>Matt Hellard | Home</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/xc.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="../scripts/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="mainWrap">
+    <div class="header">
+        <div class="central">
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="Matt Hellard Music" src="images/banner.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="central main">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shows.html">NEWS & SHOWS</a></li>
+            </ul>
+        </nav>
+
+
+        <nav class="breadcrumb">
+            <ul>
+                <li>Home</li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <!--[if lt IE 9]>
+            <p class="ie-warning">
+                You're using an outdated version of Internet Explorer, please
+                upgrade to the latest version for a better browsing experience.
+            </p>
+            <![endif]-->
+            <section >
+                <img class="rightImg" alt="" src="images/matt2.jpg" >
+                <h1>ABOUT</h1>
+                <p>This website is dedicated to Matt Hellards collection of chilled alternative acoustic songs and what he's up to.</p>
+                <p>Matt is not your conventional guitarist, with the use of percussion, alternate tunings, partial capos, two handed techniques, harmonica and banjo and his very personal song-writing style, he allows us, the listeners, to feel as if you are taking the journey with him. Although these techniques have been seen before, Matt manages to eke out something new, where the genre is ever changing from song to song. Involving traditional folk, rock, and even occasionally reggae themes, all with an underlying feel of relaxation.</p>
+                <img class="leftImg" alt="" src="images/matt1.jpg" >
+                <h1 style="color:#e84963;" >CONTACT DETAILS</h1>
+                <p><a href="#"><i style="color:#e84963;" class="fa fa-phone-square" aria-hidden="true"> </i> 07575811067</a></p>
+                <p><a href="#"><i style="color:#e84963;" class="fa fa-envelope" aria-hidden="true"></i> </i> matt.hellard@gmail.com</a></p>
+                <p><a href="#"><i style="color:#e84963;" class="fa fa-facebook-official" aria-hidden="true"> </i> @matthellardmusic</a></p>
+                <p style="clear: both;margin:50px 0 50px 0;width: 50%;" ></p>
+            </section>
+
+
+
+            <section style="clear: both;margin-bottom: 50px">
+                <div class="feed">
+                    <div class="card card-5">
+                        <h1>Latest Release</h1>
+                        <div data-xml="data/products.xml" data-xslt="xslt/recent.xslt">
+                            <p>Loading...</p>
+                            <!-- placeholder for XML content -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="card card-5">
+                        <h1>Next Show</h1>
+                        <div class="next"  >
+                            <p>Loading...</p>
+                            <!-- placeholder for XML content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div style="clear: both;height: 50px;"></div>
+        </section>
+
+        <footer>
+            Copyright &copy; 2017 - Tom Middleton
+        </footer>
+
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="scripts/m-xml.js"></script>
+<script type="text/javascript" src="scripts/helpers.js"></script>
+<script type="text/javascript">
+    magicXML.parse();
+
+    function getLatest() {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if(dd<10) {
+            dd='0'+dd;
+        }
+
+        if(mm<10) {
+            mm='0'+mm;
+        }
+
+        var date = yyyy+'-'+mm+'-'+dd;
+
+        magicXML.transformAndReplace('.next', 'data/event.xml', 'xslt/next.xslt', [{ name: 'currentDate', value: date }]);
+
+        var dateArray = document.getElementsByClassName('dateField');
+
+        var lowest = 1000000000;
+        var lowestIndex;
+
+        for(var i=0;i<dateArray.length;i++){
+            var test = dateArray[i].getAttribute('data');
+
+                var testDate = parseInt(test.substring(0,4) + test.substring(5,7) + test.substring(8,10));
+                var current = parseInt(date.substring(0,4) + date.substring(5,7) + date.substring(8,10));
+
+                if(testDate - current >= 0){
+                    if(testDate < lowest){
+                        lowest = testDate;
+                        lowestIndex = i;
+                    }
+                }
+
+        }
+
+        dateArray[lowestIndex].className = 'show';
+
+
+    }
+
+
+    getLatest();
+
+
+
+</script>
+</body>
+</html>

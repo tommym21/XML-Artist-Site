@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
+<head>
+    <title>Matt Hellard | News & Shows</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/xc.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="../scripts/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="mainWrap">
+    <div class="header">
+        <div class="central">
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="Matt Hellard Music" src="images/banner.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="central main">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shows.html">NEWS & SHOWS</a></li>
+            </ul>
+        </nav>
+
+
+        <nav class="breadcrumb">
+            <ul>
+                <li>Events</li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <!--[if lt IE 9]>
+            <p class="ie-warning">
+                You're using an outdated version of Internet Explorer, please
+                upgrade to the latest version for a better browsing experience.
+            </p>
+            <![endif]-->
+
+            <section data-xml="data/event.xml" data-xslt="xslt/events.xslt" >
+                <p>Loading...</p>
+                <!-- placeholder for XML content -->
+            </section>
+
+            <div style="clear: both;height: 50px;"></div>
+        </section>
+
+        <footer>
+            Copyright &copy; 2017 - Tom Middleton
+        </footer>
+
+
+    </div>
+</div>
+
+<div id="dvPopup"  style="display:none;">
+    <!--pop up content here-->
+</div>
+
+<script type="text/javascript" src="scripts/m-xml.js"></script>
+<script type="text/javascript">
+    magicXML.parse();
+
+
+
+    function loadNews(target) {
+
+        document.getElementById('dvPopup').innerHTML = '<button class="button" onclick="HideModalPopup(\'dvPopup\')" >Close</button><br /><object width="420" height="315" data="' +target+ '"></object>';
+        ShowModalPopup('dvPopup');
+
+    }
+
+
+
+    //Modal popup background ID. This is global scope and
+    //This value should be unique so that it does not conflict with other IDs in the page.
+    var _ModalPopupBackgroundID = 'backgroundPopup_XYZ_20110418_Custom';
+
+    function ShowModalPopup(modalPopupID) {
+
+        //Setting modal popup window
+
+        //Boolean to detect IE6.
+        var isIE6 = (navigator.appVersion.toLowerCase().indexOf('msie 6') > 0);
+
+        var popupID = "#" + modalPopupID;
+
+        //Get popup window margin top and left
+        var popupMarginTop = $(popupID).height() / 2;
+        var popupMarginLeft = $(popupID).width() / 2;
+
+        //Set popup window left and z-index
+        //z-index of modal popup window should be higher than z-index of modal background
+        $(popupID).css({
+            'left': '50%',
+            'z-index': 9999
+        });
+
+        //Special case for IE6 because it does not understand position: fixed
+        if (isIE6) {
+            $(popupID).css({
+                'top': $(document).scrollTop(),
+                'margin-top': $(window).height() / 2 - popupMarginTop,
+                'margin-left': -popupMarginLeft,
+                'display': 'block',
+                'position': 'absolute'
+            });
+        }
+        else {
+            $(popupID).css({
+                'top': '50%',
+                'margin-top': -popupMarginTop,
+                'margin-left': -popupMarginLeft,
+                'display': 'block',
+                'position': 'fixed'
+            });
+        }
+
+        //Automatically adding modal background to the page.
+        var backgroundSelector = $('<div id="' + _ModalPopupBackgroundID + '" ></div>');
+
+        //Add modal background to the body of the page.
+        backgroundSelector.appendTo('body');
+
+        //Set CSS for modal background. Set z-index of background lower than popup window.
+        backgroundSelector.css({
+            'width': $(document).width(),
+            'height': $(document).height(),
+            'display': 'none',
+            'background-color': '#555555',
+            'position': 'absolute',
+            'top': 0,
+            'left': 0,
+            'z-index': 9990
+        });
+
+        backgroundSelector.fadeTo('fast', 0.8);
+    }
+
+
+    function HideModalPopup(modalPopupID) {
+        //Hide modal popup window
+        $("#" + modalPopupID).css('display', 'none');
+
+        //Remove modal background from DOM.
+        $("#" + _ModalPopupBackgroundID).remove();
+    }
+
+
+    function demo() {
+        alert('E-commerce feature for demonstration purposes only.');
+    }
+
+
+
+</script>
+</body>
+</html>

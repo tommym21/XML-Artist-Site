@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xc:music xmlns:xc="/xcommerce/1.0" xmlns:p="/xcommerce/1.0/music"
+             xmlns:c="/xcommerce/1.0/category">
+
+
+
+    <p:music p:id="1">
+      <p:category>Album</p:category>
+      <p:name>Flying Kites</p:name>
+      <p:releaseDate>2016-06-27</p:releaseDate>
+      <p:image>flyingkites.jpg</p:image>
+      <p:description>
+        Along with two engineers, Niall Riches and Rich Cartledge, Matt worked on this album for the best part of 3 years. They poured their souls into this record, and Matt would love for you to hear it.
+      </p:description>
+      <p:trackList>
+        <p:track p:number="1" p:name="Ingress" p:length="01:25" p:embed="305609186"/>
+        <p:track p:number="2" p:name="Fork in The Road" p:length="06:38" p:embed="279690707"/>
+        <p:track p:number="3" p:name="Gypsy Ska" p:length="05:10" p:embed="272615472"/>
+        <p:track p:number="4" p:name="Flying Kites" p:length="04:23" p:embed="272615391"/>
+        <p:track p:number="5" p:name="Little Amoeba" p:length="04:17" p:embed="272615312"/>
+        <p:track p:number="6" p:name="Yonder" p:length="03:35" p:embed="272615252"/>
+
+
+        <p:track p:number="7" p:name="Dueber" p:length="04:05" />
+        <p:track p:number="8" p:name="Ocean Beach" p:length="06:45" />
+        <p:track p:number="9" p:name="Congnition" p:length="03:24" />
+        <p:track p:number="10" p:name="The Money Tree" p:length="04:30" />
+        <p:track p:number="11" p:name="Dusk" p:length="03:05" />
+
+
+        <p:track p:number="12" p:name="Alliance With The Forest" p:length="09:07" p:embed="305609186"/>
+      </p:trackList>
+      <p:price >8.00</p:price>
+
+    </p:music>
+
+
+
+
+
+    <p:music p:id="2">
+      <p:category>EP</p:category>
+      <p:name>The Unknown (Live) EP</p:name>
+      <p:releaseDate>2016-04-09</p:releaseDate>
+      <p:image>theunknown.jpg</p:image>
+      <p:description>
+        Recorded Live at Firebug, Leicester by Niall Riches, this EP Comes in a hand-made card case, with artwork by Josh Roberts. It includes a CD, unlimited streaming of The Unknown Live EP via the free Bandcamp app, plus high-quality downloads in MP3, FLAC and more.
+      </p:description>
+      <p:trackList>
+        <p:track p:number="1" p:name="The Money Tree" p:length="05:22"  />
+        <p:track p:number="2" p:name="The Unknown" p:length="03:53" />
+        <p:track p:number="3" p:name="Dusk" p:length="03:49"  />
+        <p:track p:number="4" p:name="Dueber" p:length="04:29" />
+      </p:trackList>
+      <p:price >4.00</p:price>
+    </p:music>
+
+
+
+
+
+
+    <p:music p:id="3">
+      <p:category>Single</p:category>
+      <p:name>Never Got Far (live in Trinity Chapel)</p:name>
+      <p:releaseDate>2015-10-19</p:releaseDate>
+      <p:image>nevergotfar.jpg</p:image>
+      <p:description>
+        This is a track taken from Matt's debut album "Flying Kites". This was recorded quickly during a session recording for the studio version, where Matt and Martha the cellist decided to just go for it. It ended up sounding pretty good, we're sure you'll agree!
+      </p:description>
+      <p:trackList>
+        <p:track p:number="1" p:name="Never Got Far (live in Trinity Chapel)" p:length="2:18" p:embed="140016562"/>
+      </p:trackList>
+      <p:price >3.00</p:price>
+    </p:music>
+
+    <p:music p:id="4">
+      <p:category>Single</p:category>
+      <p:name>Waves</p:name>
+      <p:releaseDate>2014-06-10</p:releaseDate>
+      <p:image>waves.jpg</p:image>
+      <p:description>
+        An earlier song from Matt in which his folk influences comes through. Recorded by himself in a home studio and playing every instrument, this is one of Matts first recorded songs.
+      </p:description>
+      <p:trackList>
+        <p:track p:number="1" p:name="Waves" p:length="4:16" p:embed="84845596"/>
+      </p:trackList>
+      <p:price >2.00</p:price>
+    </p:music>
+
+    <p:music p:id="5">
+      <p:category>Single</p:category>
+      <p:name>Back On The Road</p:name>
+      <p:releaseDate>2014-06-08</p:releaseDate>
+      <p:image>backontheroad.jpg</p:image>
+      <p:description>
+        An earlier song from Matt in which his folk influences comes through. Recorded by himself in a home studio and playing every instrument, this is one of Matts first recorded songs.
+      </p:description>
+      <p:trackList>
+        <p:track p:number="1" p:name="Back on the Road" p:length="3:57" p:embed="84845590"/>
+      </p:trackList>
+      <p:price >2.50</p:price>
+    </p:music>
+
+
+</xc:music>

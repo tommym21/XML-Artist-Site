@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xc:event xmlns:xc="/xcommerce/1.0" xmlns:p="/xcommerce/1.0/product"
+             xmlns:c="/xcommerce/1.0/category">
+
+
+
+<c:category c:name="Show" >
+
+
+  <p:event p:id="1">
+      <p:title>Matt Hellard &amp; Jacob Brathwaite at Natterjacks</p:title>
+      <p:date>2017-04-02</p:date>
+      <p:start>17:30</p:start>
+      <p:end>00:00</p:end>
+      <p:address>52A Braunstone Gate</p:address>
+      <p:city>Leicester</p:city>
+      <p:postCode>LE3 5LG</p:postCode>
+      <p:description>The first of a WEEKLY stream of incredible artists at Natterjacks. Matt Hellard and Jacob Brathwaite are coming to Natterjacks to bring you some of the best music you'll hear this year. </p:description>
+      <p:price>5.00</p:price>
+       <p:image>images/natter.jpg</p:image>
+  </p:event>
+
+    <p:event p:id="2">
+      <p:title>180 Fest at 96 degrees</p:title>
+      <p:date>2017-04-18</p:date>
+      <p:start>19:30</p:start>
+      <p:end>11:30</p:end>
+      <p:address>52A Braunstone Gate</p:address>
+      <p:city>Leicester</p:city>
+      <p:postCode>LE3 5LG</p:postCode>
+      <p:description>Matt Hellard Music will be supporting Timmas tomorrow night at Ninety Six Degrees!</p:description>
+      <p:price>4.50</p:price>
+      <p:image>images/180fest.png</p:image>
+    </p:event>
+
+    <p:event p:id="3">
+      <p:title>Flying Kites Album Launch</p:title>
+      <p:date>2016-06-27</p:date>
+      <p:start>20:00</p:start>
+      <p:end>00:00</p:end>
+      <p:address>Pi Bar, 1 Norman Street</p:address>
+      <p:city>Leicester</p:city>
+      <p:postCode>LE3 0BA</p:postCode>
+      <p:description>That moment that you have all been asking for has finally arrived! This album has been in the making for the past 2 years and is full of soul, love, blood, sweat and tears. Niall and I are putting the final touches on, getting it ready for sale on the 27th of June. Colossal thanks to everyone who has been a part of this long long process and to everyone who has patiently awaited it's arrival. </p:description>
+      <p:price>8.00</p:price>
+      <p:image>images/flyingkites.jpg</p:image>
+    </p:event>
+
+    <p:event p:id="4">
+      <p:title>HandMade Festival</p:title>
+      <p:date>2016-04-30</p:date>
+      <p:start>19:00</p:start>
+      <p:end>20:30</p:end>
+      <p:address>02 Academy</p:address>
+      <p:city>Leicester</p:city>
+      <p:postCode>LE1 7RH</p:postCode>
+      <p:description>Matt will be playing alongside fellow festival artists House of Verse with their very own stage! Handmade Festival, this coming Saturday 30th of April. On the poster and everything. Music on our stage will commense at 7. If you missed your first opportunity to one of the EP's, this is a chance to get one!</p:description>
+      <p:price>10.00</p:price>
+      <p:image>images/handmade.jpg</p:image>
+    </p:event>
+
+
+
+</c:category>
+
+  <c:category c:name="News" >
+
+
+    <p:event p:id="5">
+      <p:title>Flying Kites Albumn Cover Rework</p:title>
+      <p:date>2017-02-28</p:date>
+      <p:media type="video">images/rework.mp4</p:media>
+      <p:description>Flying Kites is getting it's artwork rejuvenated by the same slick artist who made the Unknown EP artwork, none other than Mr Joshua Roberts.To those of you who already have a copy of the album, you hold in your hands what is now considered the collectors edition and will no doubt be worth millions.</p:description>
+    </p:event>
+
+    <p:event p:id="6">
+      <p:title>Fresh Albums</p:title>
+      <p:date>2016-03-16</p:date>
+      <p:media type="image">images/covers.jpg</p:media>
+      <p:description>The album's have arrived and are looking stunning.</p:description>
+    </p:event>
+
+
+    <p:event p:id="7">
+      <p:title>Live performance at Cheriton Sessions.</p:title>
+      <p:date>2016-04-25</p:date>
+      <p:media type="video">https://www.youtube.com/embed/FJP6kmTaR6c</p:media>
+      <p:description>New Live video of my song Alliance With The Forest at Cheriton Sessions!</p:description>
+    </p:event>
+
+
+  </c:category>
+
+
+</xc:event>
